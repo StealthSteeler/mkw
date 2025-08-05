@@ -20,7 +20,7 @@ struct Vector2f {
   float normalise();
   // uses fsqrt directly
   void normalise2();
-
+  static inline float dot(const Vector2f& v1, const Vector2f& v2) { return v1.x * v2.x + v1.y * v2.y; }
   static Vector2f zero;
   // Basis vectors
   static const Vector2f ex, ey;
