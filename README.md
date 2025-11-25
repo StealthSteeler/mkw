@@ -2,11 +2,11 @@ Mario Kart Wii
 [![Build Status]][actions] [![main.dol Progress]][progress] [![StaticR.rel Progress]][progress] [![Discord Badge]][discord]
 =============
 
-[Build Status]: https://github.com/riidefi/mkw/actions/workflows/build.yml/badge.svg
-[actions]: https://github.com/riidefi/mkw/actions/workflows/build.yml
-[StaticR.rel Progress]: https://decomp.dev/riidefi/mkw.svg?category=dol&mode=shield
-[main.dol Progress]: https://decomp.dev/riidefi/mkw.svg?category=game&mode=shield
-[progress]: https://decomp.dev/riidefi/mkw
+[Build Status]: https://github.com/doldecomp/mkw/actions/workflows/build.yml/badge.svg
+[actions]: https://github.com/doldecomp/mkw/actions/workflows/build.yml
+[StaticR.rel Progress]: https://decomp.dev/doldecomp/mkw.svg?category=dol&mode=shield
+[main.dol Progress]: https://decomp.dev/doldecomp/mkw.svg?category=game&mode=shield
+[progress]: https://decomp.dev/doldecomp/mkw
 [Discord Badge]: https://img.shields.io/discord/727908905392275526?color=%237289DA&logo=discord&logoColor=%23FFFFFF
 [discord]: https://discord.gg/hKx3FJJgrV
 
@@ -66,7 +66,7 @@ Building
 - Clone the repository:
 
   ```sh
-  git clone https://github.com/riidefi/mkw.git
+  git clone https://github.com/doldecomp/mkw.git
   ```
 
 - Copy your game's disc image to `orig/RMCP01`.
