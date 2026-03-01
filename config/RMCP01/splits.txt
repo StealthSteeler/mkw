@@ -13,15 +13,6 @@ Sections:
 	.sdata2     type:rodata align:32
 	.sbss2      type:bss align:8
 
-unconfigured/trkHeader.s:
-	.init       start:0x80004000 end:0x80004100
-
-unconfigured/ppc_eabi_exception_handlers.s:
-	.init       start:0x80004100 end:0x80005F34
-
-runtime/__mem.c:
-	.init       start:0x80005F34 end:0x80006068
-
 host_system/SystemResource.cpp:
 	.text       start:0x80007F50 end:0x80007F7C
 	.rodata     start:0x80245010 end:0x802450B0
@@ -862,17 +853,23 @@ unconfigured/osThread.o:
 	.sdata      start:0x80385AE0 end:0x80385AE8
 	.sbss       start:0x80386918 end:0x80386928
 
-runtime/__start.c:
-	.init       start:0x80006068 end:0x80006348
-	.sbss       start:0x80386950 end:0x80386958
-
-runtime/__ppc_eabi_init.c:
-	.init       start:0x80006348 end:0x800063A0
-
 rvl/pad/rvlPadClamp.c:
 	.text       start:0x801AE5D8 end:0x801AE880
 	.rodata     start:0x80252DD0 end:0x80252DE8
 	.sdata2     start:0x80388930 end:0x80388938
+
+unconfigured/trkHeader.s:
+	.init       start:0x80004000 end:0x80004100
+
+unconfigured/ppc_eabi_exception_handlers.s:
+	.init       start:0x80004100 end:0x80005F34
+
+runtime/__mem.c:
+	.init       start:0x80005F34 end:0x80006068
+
+runtime/__start.c:
+	.init       start:0x80006068 end:0x80006348
+	.sbss       start:0x80386950 end:0x80386958
 
 rvl/pad/rvlPad.c:
 	.text       start:0x801AE880 end:0x801B0180
@@ -1050,3 +1047,6 @@ egg/core/eggXfb.cpp:
 
 egg/core/eggXfbManager.cpp:
 	.text       start:0x80244200 end:0x802443AC
+
+runtime/__ppc_eabi_init.c:
+	.init       start:0x80006348 end:0x800063A0

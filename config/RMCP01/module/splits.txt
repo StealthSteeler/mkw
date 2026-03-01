@@ -1,297 +1,297 @@
 Sections:
-	.text       type:code align:4
-	.ctors      type:rodata align:4
-	.dtors      type:rodata align:4
-	.rodata     type:rodata align:32
-	.data       type:data align:8
-	.bss        type:bss align:32
+	.text       type:code align:4 vaddr:0x805103B4
+	.ctors      type:rodata align:4 vaddr:0x8088F400
+	.dtors      type:rodata align:4 vaddr:0x8088F704
+	.rodata     type:rodata align:32 vaddr:0x8088F720
+	.data       type:data align:8 vaddr:0x808B2BD0
+	.bss        type:bss align:32 vaddr:0x809BD6E0
 
 system/CourseCheckpoints.cpp:
-	.text       start:0x000007D0 end:0x000022E0
-	.rodata     start:0x000001B0 end:0x000001C8
+	.text       start:0x80510B84 end:0x80512694
+	.rodata     start:0x8088F8D0 end:0x8088F8E8
 
 system/CourseMap.cpp:
-	.text       start:0x000022E0 end:0x0000890C
-	.rodata     start:0x00000300 end:0x00000328
-	.data       start:0x00000060 end:0x000000A8
-	.bss        start:0x00000008 end:0x00000018
+	.text       start:0x80512694 end:0x80518CC0
+	.rodata     start:0x8088FA20 end:0x8088FA48
+	.data       start:0x808B2C30 end:0x808B2C78
+	.bss        start:0x809BD6E8 end:0x809BD6F8
 
 system/DvdArchive.cpp:
-	.text       start:0x0000890C end:0x000092BC
-	.rodata     start:0x00000380 end:0x00000398
-	.data       start:0x000000A8 end:0x000000B8
+	.text       start:0x80518CC0 end:0x80519670
+	.rodata     start:0x8088FAA0 end:0x8088FAB8
+	.data       start:0x808B2C78 end:0x808B2C88
 
 system/GhostFile.cpp:
-	.text       start:0x0000BCD4 end:0x0000D120
-	.data       start:0x00000168 end:0x00000180
+	.text       start:0x8051C088 end:0x8051D4D4
+	.data       start:0x808B2D38 end:0x808B2D50
 
 system/KPadController.cpp:
-	.text       start:0x0000E4A8 end:0x00012D2C
-	.ctors      start:0x00000000 end:0x00000004
-	.rodata     start:0x000005A0 end:0x000005B8
+	.text       start:0x8051E85C end:0x805230E0
+	.ctors      start:0x8088F400 end:0x8088F404
+	.rodata     start:0x8088FCC0 end:0x8088FCD8
 
 KPadDirector.o:
-	.text       start:0x00012D2C end:0x00014710
-	.ctors      start:0x00000004 end:0x00000008
+	.text       start:0x805230E0 end:0x80524AC4
+	.ctors      start:0x8088F404 end:0x8088F408
 
 Mii.o:
-	.text       start:0x00015BD4 end:0x00015C40
-	.rodata     start:0x00000640 end:0x00000648
+	.text       start:0x80525F88 end:0x80525FF4
+	.rodata     start:0x8088FD60 end:0x8088FD68
 
 system/LocalizedArchive.cpp:
-	.text       start:0x00019CE4 end:0x0001A184
-	.rodata     start:0x000006A0 end:0x000006E0
-	.data       start:0x000005B8 end:0x00000608
+	.text       start:0x8052A098 end:0x8052A538
+	.rodata     start:0x8088FDC0 end:0x8088FE00
+	.data       start:0x808B3188 end:0x808B31D8
 
 system/MultiDvdArchive.cpp:
-	.text       start:0x0001A184 end:0x0001AAA8
-	.rodata     start:0x000006E0 end:0x00000708
-	.data       start:0x00000608 end:0x00000618
+	.text       start:0x8052A538 end:0x8052AE5C
+	.rodata     start:0x8088FE00 end:0x8088FE28
+	.data       start:0x808B31D8 end:0x808B31E8
 
 system/NandUtil.cpp:
-	.text       start:0x0001AAA8 end:0x0001B9A8
-	.data       start:0x00000618 end:0x00000658
+	.text       start:0x8052AE5C end:0x8052BD5C
+	.data       start:0x808B31E8 end:0x808B3228
 
 system/Rating.cpp:
-	.text       start:0x0001CB44 end:0x0001CEE4
-	.rodata     start:0x00000840 end:0x00000878
+	.text       start:0x8052CEF8 end:0x8052D298
+	.rodata     start:0x8088FF60 end:0x8088FF98
 
 system/RaceConfig.cpp:
-	.text       start:0x0001D5B8 end:0x00021CD0
-	.rodata     start:0x00000888 end:0x00000A28
-	.data       start:0x00000690 end:0x000006E0
-	.bss        start:0x00000048 end:0x00000050
+	.text       start:0x8052D96C end:0x80532084
+	.rodata     start:0x8088FFA8 end:0x80890148
+	.data       start:0x808B3260 end:0x808B32B0
+	.bss        start:0x809BD728 end:0x809BD730
 
 system/RaceManager.cpp:
-	.text       start:0x00021CD0 end:0x00028064
-	.rodata     start:0x00000A28 end:0x00000AF8
-	.data       start:0x000006E0 end:0x00000920
-	.bss        start:0x00000050 end:0x00000058
+	.text       start:0x80532084 end:0x80538418
+	.rodata     start:0x80890148 end:0x80890218
+	.data       start:0x808B32B0 end:0x808B34F0
+	.bss        start:0x809BD730 end:0x809BD738
 
 system/ResourceManager.cpp:
-	.text       start:0x0002F898 end:0x000324B4
-	.rodata     start:0x00000D70 end:0x000015F0
-	.data       start:0x00000D90 end:0x00001060
-	.bss        start:0x00000058 end:0x00000060
+	.text       start:0x8053FC4C end:0x80542868
+	.rodata     start:0x80890490 end:0x80890D10
+	.data       start:0x808B3960 end:0x808B3C30
+	.bss        start:0x809BD738 end:0x809BD740
 
 system/ResourceManagerUnk80542868.cpp:
-	.text       start:0x000324B4 end:0x000324C4
-	.rodata     start:0x000015F0 end:0x00001600
-	.data       start:0x00001060 end:0x00001078
+	.text       start:0x80542868 end:0x80542878
+	.rodata     start:0x80890D10 end:0x80890D20
+	.data       start:0x808B3C30 end:0x808B3C48
 
 util/ModuleSymbols.cpp:
-	.text       start:0x00044F68 end:0x000450B0
-	.rodata     start:0x00001BD0 end:0x00001C40
+	.text       start:0x8055531C end:0x80555464
+	.rodata     start:0x808912F0 end:0x80891360
 
 util/Random.cpp:
-	.text       start:0x000450B0 end:0x00045378
-	.rodata     start:0x00001C50 end:0x00001C60
-	.data       start:0x00001710 end:0x00001720
+	.text       start:0x80555464 end:0x8055572C
+	.rodata     start:0x80891370 end:0x80891380
+	.data       start:0x808B42E0 end:0x808B42F0
 
 kart/KartCollide.cpp:
-	.text       start:0x0005E1B8 end:0x00063C7C
-	.rodata     start:0x00002010 end:0x00002090
-	.data       start:0x00002AD8 end:0x00002AF0
+	.text       start:0x8056E56C end:0x80574030
+	.rodata     start:0x80891730 end:0x808917B0
+	.data       start:0x808B56A8 end:0x808B56C0
 
 kart/KartMove.cpp:
-	.text       start:0x00067C10 end:0x000794A8
+	.text       start:0x80577FC4 end:0x8058985C
 
 kart/KartObjectProxy.cpp:
-	.text       start:0x0007FD74 end:0x00081640
-	.rodata     start:0x00002538 end:0x00002568
-	.bss        start:0x00004220 end:0x00004230
+	.text       start:0x80590128 end:0x805919F4
+	.rodata     start:0x80891C58 end:0x80891C88
+	.bss        start:0x809C1900 end:0x809C1910
 
 kart/KartSettings.cpp:
-	.text       start:0x00082C0C end:0x00082CD8
+	.text       start:0x80592FC0 end:0x8059308C
 
 kart/KartState.cpp:
-	.text       start:0x00084000 end:0x00085950
-	.rodata     start:0x000027D0 end:0x000027F8
-	.data       start:0x00003918 end:0x00003970
+	.text       start:0x805943B4 end:0x80595D04
+	.rodata     start:0x80891EF0 end:0x80891F18
+	.data       start:0x808B64E8 end:0x808B6540
 
 kart/KartSus.cpp:
-	.text       start:0x00088754 end:0x00089058
-	.rodata     start:0x00002840 end:0x00002848
-	.data       start:0x000039E0 end:0x00003AB8
+	.text       start:0x80598B08 end:0x8059940C
+	.rodata     start:0x80891F60 end:0x80891F68
+	.data       start:0x808B65B0 end:0x808B6688
 
 kart/KartWheelPhysics.cpp:
-	.text       start:0x00089058 end:0x0008A690
-	.rodata     start:0x00002848 end:0x00002878
-	.data       start:0x00003AB8 end:0x00003AF0
+	.text       start:0x8059940C end:0x8059AA44
+	.rodata     start:0x80891F68 end:0x80891F98
+	.data       start:0x808B6688 end:0x808B66C0
 
 kart/KartPhysics.cpp:
-	.text       start:0x0008F208 end:0x000900CC
-	.rodata     start:0x000028F0 end:0x00002908
-	.data       start:0x00003E18 end:0x00003E38
+	.text       start:0x8059F5BC end:0x805A0480
+	.rodata     start:0x80892010 end:0x80892028
+	.data       start:0x808B69E8 end:0x808B6A08
 
 kart/KartPhysicsInstance.cpp:
-	.text       start:0x000900CC end:0x0009019C
-	.data       start:0x00003E38 end:0x00003E40
-	.bss        start:0x000042B0 end:0x000042B8
+	.text       start:0x805A0480 end:0x805A0550
+	.data       start:0x808B6A08 end:0x808B6A10
+	.bss        start:0x809C1990 end:0x809C1998
 
 kart/RKGeom.cpp:
-	.text       start:0x0009E400 end:0x0009EFBC
-	.rodata     start:0x00002E18 end:0x00002E38
-	.data       start:0x000042A0 end:0x000042B0
-	.bss        start:0x00004310 end:0x00004410
+	.text       start:0x805AE7B4 end:0x805AF370
+	.rodata     start:0x80892538 end:0x80892558
+	.data       start:0x808B6E70 end:0x808B6E80
+	.bss        start:0x809C19F0 end:0x809C1AF0
 
 kart/KartDynamics.cpp:
-	.text       start:0x000A4744 end:0x000A6370
-	.rodata     start:0x00003030 end:0x00003068
-	.data       start:0x00004730 end:0x00004758
+	.text       start:0x805B4AF8 end:0x805B6724
+	.rodata     start:0x80892750 end:0x80892788
+	.data       start:0x808B7300 end:0x808B7328
 
 kart/KartHitbox.cpp:
-	.text       start:0x000A7B94 end:0x000A85D0
-	.rodata     start:0x00003088 end:0x000030A8
+	.text       start:0x805B7F48 end:0x805B8984
+	.rodata     start:0x808927A8 end:0x808927C8
 
 ui/ControlGroup.cpp:
-	.text       start:0x000B2030 end:0x000B2864
+	.text       start:0x805C23E4 end:0x805C2C18
 
 ui/MessageGroup.cpp:
-	.text       start:0x000E8780 end:0x000E89A8
-	.rodata     start:0x00006A28 end:0x00006A38
+	.text       start:0x805F8B34 end:0x805F8D5C
+	.rodata     start:0x80896148 end:0x80896158
 
 ui/Page.cpp:
-	.text       start:0x000F15C8 end:0x000F2978
-	.data       start:0x000079F0 end:0x00007A54
+	.text       start:0x8060197C end:0x80602D2C
+	.data       start:0x808BA5C0 end:0x808BA624
 
 ui/Section.o:
-	.text       start:0x00111958 end:0x001142DC
+	.text       start:0x80621D0C end:0x80624690
 
 ui/SectionAutogens.cpp:
-	.text       start:0x0011BFF0 end:0x00122058
-	.data       start:0x00009C40 end:0x0000A400
+	.text       start:0x8062C3A4 end:0x8063240C
+	.data       start:0x808BC810 end:0x808BCFD0
 
 ui/SectionManager.cpp:
-	.text       start:0x001247CC end:0x00125B04
-	.bss        start:0x00004758 end:0x00004760
+	.text       start:0x80634B80 end:0x80635EB8
+	.bss        start:0x809C1E38 end:0x809C1E40
 
 net/MiscPacketHandler.cpp:
-	.text       start:0x00142E54 end:0x00145484
-	.bss        start:0x00004870 end:0x00004878
+	.text       start:0x80653208 end:0x80655838
+	.bss        start:0x809C1F50 end:0x809C1F58
 
 net/NetManager.cpp:
-	.text       start:0x00145770 end:0x00149E98
-	.data       start:0x0000DD90 end:0x0000DDC8
-	.bss        start:0x00004878 end:0x00004A00
+	.text       start:0x80655B24 end:0x8065A24C
+	.data       start:0x808C0960 end:0x808C0998
+	.bss        start:0x809C1F58 end:0x809C20E0
 
 net/packets/ROOM.cpp:
-	.text       start:0x0014A6D4 end:0x0014AFA0
-	.bss        start:0x00004A00 end:0x00004A10
+	.text       start:0x8065AA88 end:0x8065B354
+	.bss        start:0x809C20E0 end:0x809C20F0
 
 net/packets/EVENT.cpp:
-	.text       start:0x0014B134 end:0x0014BD38
-	.bss        start:0x00004A10 end:0x00004A18
+	.text       start:0x8065B4E8 end:0x8065C0EC
+	.bss        start:0x809C20F0 end:0x809C20F8
 
 net/packets/ITEM.cpp:
-	.text       start:0x0014BD38 end:0x0014FAD8
-	.bss        start:0x00004A18 end:0x00004A20
+	.text       start:0x8065C0EC end:0x8065FE8C
+	.bss        start:0x809C20F8 end:0x809C2100
 
 net/packets/SELECT.cpp:
-	.text       start:0x0014FAD8 end:0x001523C4
-	.bss        start:0x00004A20 end:0x00004A28
+	.text       start:0x8065FE8C end:0x80662778
+	.bss        start:0x809C2100 end:0x809C2108
 
 net/packets/USER.cpp:
-	.text       start:0x001523C4 end:0x00152DE0
-	.bss        start:0x00004A28 end:0x00004A30
+	.text       start:0x80662778 end:0x80663194
+	.bss        start:0x809C2108 end:0x809C2110
 
 net/packets/RACEHEADER1.cpp:
-	.text       start:0x001536F0 end:0x00155184
-	.bss        start:0x00004A38 end:0x00004A40
+	.text       start:0x80663AA4 end:0x80665538
+	.bss        start:0x809C2118 end:0x809C2120
 
 ObjKoopaFigure64.o:
-	.text       start:0x001CA560 end:0x001CADD0
+	.text       start:0x806DA914 end:0x806DB184
 
 ObjKuribo.o:
-	.text       start:0x001CADD0 end:0x001CCF24
+	.text       start:0x806DB184 end:0x806DD2D8
 
 ObjFloat.o:
-	.text       start:0x001CCF24 end:0x001CD580
+	.text       start:0x806DD2D8 end:0x806DD934
 
 ObjOilSFC.o:
-	.text       start:0x001CD580 end:0x001CD6D0
+	.text       start:0x806DD934 end:0x806DDA84
 
 MapObjSniper.o:
-	.text       start:0x001CD6D0 end:0x001CD8FC
+	.text       start:0x806DDA84 end:0x806DDCB0
 
 ObjSound.o:
-	.text       start:0x001CD8FC end:0x001CDA24
+	.text       start:0x806DDCB0 end:0x806DDDD8
 
 ObjSunDS.o:
-	.text       start:0x001CDA24 end:0x001CE270
+	.text       start:0x806DDDD8 end:0x806DE624
 
 ObjSunDSManager.o:
-	.text       start:0x001CE270 end:0x001CE448
+	.text       start:0x806DE624 end:0x806DE7FC
 
 ObjTaimatsu.o:
-	.text       start:0x001CE448 end:0x001CE78C
+	.text       start:0x806DE7FC end:0x806DEB40
 
 enemy/AI.cpp:
-	.text       start:0x00215C28 end:0x002161AC
-	.rodata     start:0x00012C90 end:0x00012C9C
-	.data       start:0x00016CF8 end:0x00016D18
+	.text       start:0x80725FDC end:0x80726560
+	.rodata     start:0x808A23B0 end:0x808A23BC
+	.data       start:0x808C98C8 end:0x808C98E8
 
 enemy/AIControlDemo.cpp:
-	.text       start:0x0021DC1C end:0x0021E42C
-	.rodata     start:0x00012F10 end:0x00012F20
-	.data       start:0x00017660 end:0x000177C0
+	.text       start:0x8072DFD0 end:0x8072E7E0
+	.rodata     start:0x808A2630 end:0x808A2640
+	.data       start:0x808CA230 end:0x808CA390
 
 enemy/AIItem.cpp:
-	.text       start:0x00223014 end:0x00224EE8
-	.data       start:0x00017CA0 end:0x00017E80
+	.text       start:0x807333C8 end:0x8073529C
+	.data       start:0x808CA870 end:0x808CAA50
 
 enemy/AITrickHandler.cpp:
-	.text       start:0x00224EE8 end:0x00225594
-	.rodata     start:0x00012FB0 end:0x00012FC8
-	.data       start:0x00017E80 end:0x00017EF0
+	.text       start:0x8073529C end:0x80735948
+	.rodata     start:0x808A26D0 end:0x808A26E8
+	.data       start:0x808CAA50 end:0x808CAAC0
 
 enemy/AISpeed.cpp:
-	.text       start:0x00233438 end:0x0023437C
-	.rodata     start:0x00013420 end:0x00013468
-	.data       start:0x00018928 end:0x00018A20
+	.text       start:0x807437EC end:0x80744730
+	.rodata     start:0x808A2B40 end:0x808A2B88
+	.data       start:0x808CB4F8 end:0x808CB5F0
 
 geo/BoxColManager.cpp:
-	.text       start:0x00276AAC end:0x00276B1C
+	.text       start:0x80786E60 end:0x80786ED0
 
 geo/BoxColUnit.cpp:
-	.text       start:0x00276B1C end:0x00276BE4
-	.rodata     start:0x000150E0 end:0x000150E8
+	.text       start:0x80786ED0 end:0x80786F98
+	.rodata     start:0x808A4800 end:0x808A4808
 
 field/CourseModel.cpp:
-	.text       start:0x0027DA50 end:0x00280724
-	.ctors      start:0x0000017C end:0x00000180
-	.rodata     start:0x00015438 end:0x000155A0
-	.data       start:0x0001EC90 end:0x0001ECF8
-	.bss        start:0x00005860 end:0x00005868
+	.text       start:0x8078DE04 end:0x80790AD8
+	.ctors      start:0x8088F57C end:0x8088F580
+	.rodata     start:0x808A4B58 end:0x808A4CC0
+	.data       start:0x808D1860 end:0x808D18C8
+	.bss        start:0x809C2F40 end:0x809C2F48
 
 field/CollisionEntries.cpp:
-	.text       start:0x002AD5B8 end:0x002AD8A8
-	.rodata     start:0x00016FB0 end:0x00016FB8
-	.bss        start:0x000061F8 end:0x00006508
+	.text       start:0x807BD96C end:0x807BDC5C
+	.rodata     start:0x808A66D0 end:0x808A66D8
+	.bss        start:0x809C38D8 end:0x809C3BE8
 
 field/RKGndCol.cpp:
-	.text       start:0x002AD8A8 end:0x002B2218
-	.rodata     start:0x00016FB8 end:0x00016FE0
-	.data       start:0x0001FC28 end:0x0001FC38
+	.text       start:0x807BDC5C end:0x807C25CC
+	.rodata     start:0x808A66D8 end:0x808A6700
+	.data       start:0x808D27F8 end:0x808D2808
 
 field/CourseColManager.cpp:
-	.text       start:0x002B2470 end:0x002B4934
-	.rodata     start:0x00016FF0 end:0x00017000
-	.data       start:0x0001FC38 end:0x0001FDB8
-	.bss        start:0x00006530 end:0x00006538
+	.text       start:0x807C2824 end:0x807C4CE8
+	.rodata     start:0x808A6710 end:0x808A6720
+	.data       start:0x808D2808 end:0x808D2988
+	.bss        start:0x809C3C10 end:0x809C3C18
 
 field/ObjColManager.cpp:
-	.text       start:0x002B4934 end:0x002B6658
-	.rodata     start:0x00017000 end:0x00017010
+	.text       start:0x807C4CE8 end:0x807C6A0C
+	.rodata     start:0x808A6720 end:0x808A6730
 
 ObjDrivableManager.o:
-	.text       start:0x0030AF70 end:0x0030C734
-	.rodata     start:0x0001BE38 end:0x0001BE40
-	.data       start:0x00024078 end:0x00024088
-	.bss        start:0x00006C30 end:0x00006C38
+	.text       start:0x8081B324 end:0x8081CAE8
+	.rodata     start:0x808AB558 end:0x808AB560
+	.data       start:0x808D6C48 end:0x808D6C58
+	.bss        start:0x809C4310 end:0x809C4318
 
 Runtime.PPCEABI.H/global_destructor_chain.c:
-	.text       start:0x0037EF80 end:0x0037F04C
-	.dtors      start:0x00000000 end:0x00000004 rename:.dtors$10
-	.dtors      start:0x00000004 end:0x00000008 skip
-	.bss        start:0x000075A8 end:0x000075B0
+	.text       start:0x8088F334 end:0x8088F400
+	.dtors      start:0x8088F704 end:0x8088F708 rename:.dtors$10
+	.dtors      start:0x8088F708 end:0x8088F70C skip
+	.bss        start:0x809C4C88 end:0x809C4C90
