@@ -55,9 +55,9 @@ void Page::f18b0(){
     else if (mState == ACTIVE) {
         mInputManager->vf20();
         //s32 a = System::RKSystem::spInstance->mSceneMgr->getStatus();
-        if(-1 < ((1 - a) | a -1)) {
+        //if(-1 < ((1 - a) | a -1)) {
             mInputManager->calc();
-        }
+        //}
         
     }
 }
