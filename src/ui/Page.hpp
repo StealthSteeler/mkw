@@ -8,12 +8,18 @@
 
 namespace UI {
 
-class MenuInputManager;
+class MenuInputManager {
+  public:
+    virtual void reinitSelf();
+    virtual void vf20();
+    virtual void calc();
+};
 
 class Page {
 public:
   Page();
   virtual ~Page();
+
   virtual void getName();
   virtual void getReplacement();
   virtual void vf14();
@@ -41,7 +47,6 @@ public:
   void deinit();
   void activate();
   void deactivate();
-
   void advanceFrame();
   void f18b0();
   void calcActivation();
@@ -59,9 +64,20 @@ public:
   void setInputManager(MenuInputManager* inputManager);
   void skipInAnimation(void);
   void startReplace(s32 animationDirection, f32 delay);
-  void skipOutAnimation(void);
-
+  void skipOutAnimation(void); 
   void calcAnim();
+  void f22a8();
+  void f2518();
+  void f256c(UIControl *control);
+  void f25ac();
+  void f25bc();
+  void f2640();
+  void f2750();
+  void f28ac();
+  void f2934();
+  void playSfx();
+  void f2958();
+  void setAnimSfxIds(u32 nextId, u32 prevId);
 
 private:
   s32 mId;
