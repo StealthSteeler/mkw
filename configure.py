@@ -807,6 +807,7 @@ config.libs = [
             Object(NonMatching, "ui/SectionAutogens.cpp"),
             Object(NonMatching, "ui/SectionManager.cpp"),
             Object(NonMatching, "ui/Page.cpp"),
+            Object(NonMatching, "ui/UIControl.cpp"),
 
             Object(Equivalent, "enemy/AI.cpp"),
             Object(NonMatching, "enemy/AIControlDemo.cpp"),

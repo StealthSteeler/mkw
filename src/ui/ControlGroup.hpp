@@ -21,7 +21,7 @@ public:
   UIControl* at(int index);
   inline UIControl* operator[](int index) { return at(index); }
 
-  struct Functor {
+  struct Visitor {
     virtual void operator()(UIControl* control) = 0;
   };
 
@@ -33,7 +33,7 @@ public:
   void draw(int draw_pass); // call each frame
 
   void solve();                     // solve positioning
-  void transform(Functor& functor); // a la std::transform
+  void visit(Visitor& functor); // a la std::transform
 
   UIControl* getParent() { return mParent; }
   Page* getPage() { return mPage; }

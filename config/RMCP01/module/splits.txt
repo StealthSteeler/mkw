@@ -166,6 +166,9 @@ ui/SectionManager.cpp:
 	.text       start:0x80634B80 end:0x80635EB8
 	.bss        start:0x809C1E38 end:0x809C1E40
 
+ui/UIControl.cpp:
+	.text       start:0x8063CE6C end:0x8063D770
+
 net/MiscPacketHandler.cpp:
 	.text       start:0x80653208 end:0x80655838
 	.bss        start:0x809C1F50 end:0x809C1F58

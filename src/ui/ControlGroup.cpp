@@ -105,10 +105,10 @@ void ControlGroup::solve() {
 
 UIControl* ControlGroup::at(int index) { return mData[index]; }
 
-void ControlGroup::transform(ControlGroup::Functor& functor) {
+void ControlGroup::visit(ControlGroup::Visitor& visitor) {
   for (int i = 0; i < mSize; ++i) {
-    functor(mData[i]);
-    mData[i]->getChildren()->transform(functor);
+    visitor(mData[i]);
+    mData[i]->getChildren()->visit(visitor);
   }
 }
 

@@ -4,15 +4,59 @@
 
 #include <decomp.h>
 
+#include "nw4r/ut/ut_RTTI.hpp"
 #include "ui/ControlGroup.hpp"
+#include "ui/Page.hpp"
+#include "ui/UIControl.hpp"
 
 namespace UI {
 
+
+
 class MenuInputManager {
   public:
+    virtual nw4r::ut::detail::RuntimeTypeInfo *GetRuntimeTypeInfo();
     virtual void reinitSelf();
     virtual void vf20();
     virtual void calc();
+    virtual void vf28();
+    void activate();
+};
+
+class SceneSoundManager {
+  public:
+  static void playSfx(u32 soundNameID, u32 unused, void *origin);
+  static void unkPlaySfxPage(u32 unk, u32 unk2, Page *page);
+};
+
+class MultiControlInputManager : public MenuInputManager{
+  public:
+    static nw4r::ut::detail::RuntimeTypeInfo typeInfo;
+    void setPerControl(u32 playerId, BOOL perControl);
+};
+
+struct FetchStartFrameVisitor : ControlGroup::Visitor {
+    FetchStartFrameVisitor() : frame(0.0f) {}
+    virtual void operator()(UIControl* control) override; 
+    f32 frame;
+};
+
+struct SolveFrameVisitor : ControlGroup::Visitor {
+    SolveFrameVisitor() : frame(0.0f) {}
+    virtual void operator()(UIControl* control) override;
+    f32 frame;
+};
+
+struct SolveVisitor : ControlGroup::Visitor {
+    virtual void operator()(UIControl* control) override;
+    u32 page_Id;
+    u32 pageState;
+    f32 startFrame;
+    f32 unk2;
+    f32 unk3;
+    u32 unk4;
+    f32 b;
+    BOOL finished;
 };
 
 class Page {
@@ -66,17 +110,14 @@ public:
   void startReplace(s32 animationDirection, f32 delay);
   void skipOutAnimation(void); 
   void calcAnim();
-  void f22a8();
-  void f2518();
-  void f256c(UIControl *control);
-  void f25ac();
-  void f25bc();
-  void f2640();
-  void f2750();
-  void f28ac();
+  void fetchStartFrame();
+  void inAnimationStart();
+  void inAnimationEnd();
+  void outAnimationStart();
+  void outAnimationEnd();
   void f2934();
-  void playSfx();
-  void f2958();
+  void playSfx(u32 soundNameID, u32 unused);
+  void unkplaySfx(u32 unk, u32 unk2);
   void setAnimSfxIds(u32 nextId, u32 prevId);
 
 private:
@@ -93,16 +134,19 @@ private:
   MenuInputManager* mInputManager;
   u32 mNextAnimationSfxId;
   u32 mPrevAnimationSfxId;
+
+
 };
 
+
 enum State {
-    UNLOADED,    
-    DEACTIVATED,  
-    ACTIVATING,
-    ACTIVE_ANIM,
-    ACTIVE,
-    DEACTIVATE_ANIM,
-    EXITED,
+  UNLOADED,    
+  DEACTIVATED,  
+  ACTIVATING,
+  ACTIVE_ANIM,
+  ACTIVE,
+  DEACTIVATE_ANIM,
+  EXITED,
 };
 
 static_assert(sizeof(Page) == 0x44);

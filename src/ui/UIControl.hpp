@@ -96,7 +96,7 @@ public:
   void initChildren(u32 capacity);
 
   void insertChild(u32 index, UIControl* child);
-
+  float getAnimStartFrame();
   void onGroupAttached(ControlGroup* group, u32 draw_pass);
 
   void solve_propagate();
